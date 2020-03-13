@@ -1,0 +1,36 @@
+  PID USER       VSZ STAT COMMAND
+    1 0         1888 S    init       
+    2 0            0 SW   [kthreadd]
+    3 0            0 SW   [ksoftirqd/0]
+    4 0            0 SW   [watchdog/0]
+    5 0            0 SW   [events/0]
+    6 0            0 SW   [khelper]
+    7 0            0 SW   [async/mgr]
+    8 0            0 SW   [sync_supers]
+    9 0            0 SW   [bdi-default]
+   10 0            0 SW   [kblockd/0]
+   11 0            0 SW   [ata/0]
+   12 0            0 SW   [ata_aux]
+   13 0            0 SW   [ksuspend_usbd]
+   14 0            0 SW   [khubd]
+   15 0            0 SW   [kseriod]
+   16 0            0 SW   [kmmcd]
+   17 0            0 SW   [khungtaskd]
+   18 0            0 SW   [kswapd0]
+   19 0            0 SWN  [ksmd]
+   20 0            0 SW   [aio/0]
+   21 0            0 SW   [unionfs_siod/0]
+   22 0            0 SW   [crypto/0]
+   32 0            0 SW   [scsi_eh_0]
+   33 0            0 SW   [scsi_eh_1]
+   34 0            0 SW   [mtdblockd]
+   43 0            0 SW   [kpsmoused]
+   44 0            0 SW   [usbhid_resumer]
+   46 0         1888 S    /bin/sh /etc_ro/rcS 
+   49 0            0 SW   [khelper]
+   50 0         2096 S    /bin/sh 
+   52 0         1164 S    nvram_daemon 
+   89 0            0 SW   [flush-8:0]
+  412 0         1800 S    /bin/busybox sh 
+  413 0          140 S    iSmartAlarmShell 
+  414 0         1796 R    ps 
