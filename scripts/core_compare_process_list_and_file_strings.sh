@@ -7,5 +7,5 @@ STRINGSDIR=/home/ubuntu/Stitcher/output/core/strings_output/
 
 while read PROCESSES
 do
-  grep -wnr "$PROCESSES" $STRINGSDIR
+  grep -wnr "$PROCESSES" $STRINGSDIR 2>/dev/null
   done < $PROCESSLIST
