@@ -7,5 +7,5 @@ FILELIST=/home/ubuntu/Stitcher/output/core/filelist.txt
 
 while read PROCESSES
 do
-  grep "$PROCESSES" $FILELIST
+  grep "$PROCESSES" $FILELIST 2>/dev/null
 done < $PROCESSLIST
