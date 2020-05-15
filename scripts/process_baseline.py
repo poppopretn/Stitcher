@@ -23,7 +23,12 @@ baseline_process_list_output = "/home/ubuntu/Stitcher/output/baseline/processlis
 def mount_image():
     # This function is for mounting the firmware image file
     #
-    print("[+] Mounting Image.")
+    print("[+] Mounting Baseline Firmware Image.")
+    print("[*] This evidence is classified as:")
+    print("[*] 7.2.2 Active data (from ISO 27050-1:2019)")
+    print("[*] 7.3.2 Custodian data source (from ISO 27050-1:2019)")
+    print("[*] 7.4.2 Native format (from ISO 27050-1:2019)")
+    print("[*] 8.2.3.9 Data store (from ISO 30141:2018)")
     mount_cmd = "mount -t auto -o loop,offset=$((2048*512)) " + baseline_image + " " + baseline_mount_path
     os.system(mount_cmd)
     print("[+] Image Mount Completed")
@@ -231,7 +236,12 @@ def generate_file_strings():
 def analyse_network_capture():
     # This function will parse through the pcap file and get the single top TCP port and all TCP ports
     # The tshark command needs to be amended to reflect the file path of where the file is stored
-    print("[+] Analysing Network Capture.")
+    print("[+] Analysing Baseline Network Capture.")
+    print("[*] This evidence is classified as:")
+    print("[*] 7.2.3 Inactive data (from ISO 27050-1:2019)")
+    print("[*] 7.3.3 Non-custodian data source (from ISO 27050-1:2019)")
+    print("[*] 7.4.2 Native format (from ISO 27050-1:2019)")
+    print("[*] 8.2.3.8 Network (from ISO 30141:2018)")
     top_TCP_port_cmd = 'tshark -r /home/ubuntu/Stitcher/evidence/baseline/BaselineTraffic.pcapng -Y "tcp" -T fields -e tcp.dstport | sort -n | uniq -c |' + " awk '{print $2}'| head -n 1 > " + baseline_network_top_TCP_port_output
     os.system(top_TCP_port_cmd)
     top_TCP_ports_cmd = 'tshark -r /home/ubuntu/Stitcher/evidence/baseline/BaselineTraffic.pcapng -Y "tcp" -T fields -e tcp.dstport | sort -n | uniq -c |' + " awk '{print $2}' > " + baseline_network_top_TCP_ports_output
@@ -241,7 +251,12 @@ def analyse_network_capture():
 
 def generate_process_list():
     # This function extracts the list of processes that were running.
-    print("[+] Analysing Process List.")
+    print("[+] Analysing Baseline Process List.")
+    print("[*] This evidence is classified as:")
+    print("[*] 7.2.2 Active data (from ISO 27050-1:2019)")
+    print("[*] 7.3.2 Custodian data source (from ISO 27050-1:2019)")
+    print("[*] 7.4.2 Native format (from ISO 27050-1:2019)")
+    print("[*] 8.2.3.5 Service (from ISO 30141:2018)")
     process_cmd = "cat " + baseline_ps + " | awk '{print $5}' > " + baseline_process_list_output
     os.system(process_cmd)
     print("[+] Process List Analysis Completed")
