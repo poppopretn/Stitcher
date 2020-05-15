@@ -1,6 +1,6 @@
 # Stitcher
 
-Stitcher is an IoT digital forensics evidence classification and correlation tool. It takes in pre-processed firmware images, network packet captures and system processes, and correlates any data points that is a match within the evidence dataset. Stitcher classifies the evidence according to ISO27050-1:2016 and ISO30141:2018 for enhanced reporting. It also aims to reduce evidence analysis time required by forensic investigators, and also address the consistency and correlation problem faced by digital forensic investigators. For better correlation, baseline data can be provided.
+Stitcher is an IoT digital forensics evidence classification and correlation tool. It takes in pre-processed firmware images, network packet captures and system processes, and correlates any data points that is a match within the evidence dataset. Stitcher classifies the evidence according to ISO27050-1:2019 and ISO30141:2018 for enhanced reporting. It also aims to reduce evidence analysis time required by forensic investigators, and also address the consistency and correlation problem faced by digital forensic investigators. For better correlation, baseline data can be provided.
 
 **Note**: Stitcher is a research tool, and is not yet production ready. It currently serves as a Proof-of-Concept and work is ongoing to improve its functionalities. It is recommended to run Stitcher in a test environment (e.g. a Virtual Machine). A link to the research paper Stitcher is based on will be provided when it is available.
 
