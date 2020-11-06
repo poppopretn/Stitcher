@@ -2,7 +2,7 @@
 
 Stitcher is an IoT digital forensics evidence classification and correlation tool. It takes in pre-processed firmware images, network packet captures and system processes, and correlates any data points that is a match within the evidence dataset. Stitcher classifies the evidence according to ISO27050-1:2019 and ISO30141:2018 for enhanced reporting. It also aims to reduce evidence analysis time required by forensic investigators, and also address the consistency and correlation problem faced by digital forensic investigators. For better correlation, baseline data can be provided.
 
-**Note**: Stitcher is a research tool, and is not yet production ready. It currently serves as a Proof-of-Concept and work is ongoing to improve its functionalities. It is recommended to run Stitcher in a test environment (e.g. a Virtual Machine). A link to the research paper Stitcher is based on will be provided when it is available.
+**Note**: Stitcher is a research tool, and is not yet production ready. It currently serves as a Proof-of-Concept and work is ongoing to improve its functionalities. It is recommended to run Stitcher in a test environment (e.g. a Virtual Machine). Motivations behind the creation of Stitcher, along with the structure and results of the experiment has been published in Volume 35 of Forensic Science International: Digital Investigation. To take a look at the paper, please click [here](https://doi.org/10.1016/j.fsidi.2020.301071).
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ To run Stitcher, change the file path to the "scripts" folder and execute "Stitc
 ```
 git clone --recursive https://github.com/poppopretn/Stitcher.git
 cd scripts
-sudo Stitcher.sh
+sudo ./Stitcher.sh
 ```
 
 ### Dependencies
